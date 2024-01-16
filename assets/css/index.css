@@ -3,11 +3,11 @@
     --background: #200F21;
     --second-background: #382039;
     --links: #B030B0;
-    --fonts: #FFFFFF;
+    --fonts: #FFF;
 }
 
 * {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Helvetica, sans-serif;
     color: var(--fonts);
 }
 
@@ -17,7 +17,9 @@ body {
 
 a {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 85px;
     &:hover {
     color: var(--links);
     }
@@ -27,7 +29,6 @@ h1 {
     text-align: center;
     font-size: 64px;
     font-weight: normal;
-   
 }
 
 p {
@@ -35,3 +36,13 @@ p {
     font-size: 24px;
 }
 
+img {
+    display: flex;
+}
+
+menu-nav {
+    display: inline-flex;
+    padding: 21px 47px 19px 30px;
+    align-items: flex-end;
+    gap: 522px;
+}
