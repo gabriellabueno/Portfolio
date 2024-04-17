@@ -1,4 +1,4 @@
-/* variables*/
+/* VARIABLES */
 :root {
     --color-first: #200F20;
     --color-second: #382038;
@@ -6,7 +6,21 @@
     --color-font: #edf4f5;
 }
 
-/* text */
+/* BACKGROUND */
+body {
+    background-color: var(--color-first);
+}
+
+.light-bg {
+    background-color: var(--color-second);
+}
+
+.dark-bg {
+    background-color: var(--color-first);
+}
+
+
+/* TEXT */
 * {
     font-family: 'Montserrat', Helvetica, sans-serif;
     color: var(--color-font);
@@ -25,31 +39,22 @@ p {
     font-size: 24px;
 }
 
-/* background */
-body {
-    background-color: var(--color-first);
-}
 
-.light-bg {
-    background-color: var(--color-second);
-}
-
-.dark-bg {
-    background-color: var(--color-first);
-}
-
-/* navigation menu*/
+/* NAVIGATION MENU */
 
 .menu-nav {
-    text-align: right;
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+    margin: 10px 40px;
 }
 
 .menu-nav a {
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-    background-color: blue;
     &:hover:not(buttonCV) {
         color: var(--color-third);
     }
@@ -57,16 +62,16 @@ body {
 
 #buttonCV {
     background-color: var(--color-third);
-    padding: 15px;
+    padding: 14px 18px 14px 18px;
     border-radius: 30px;
     color: var(--color-first);
     transition: .2s ease-in-out 0s;
     &:hover {
-        transform: scale(1.05); 
+        transform: scale(1.08); 
     }
 }
 
-/* header */
+/* HEADER */
 
 .welcome-quote {
     font-size: 40px;
@@ -95,7 +100,7 @@ body {
 
 .quote-p3 {
     color: var(--color-first);
-    font-weight: 700;
+    font-weight: 400;
     padding: 15px;
     &:hover {
         color: var(--color-third);
@@ -107,8 +112,12 @@ img {
     height: auto;
 }
 
-/* */
+/* ABOUT */
 .about-content {
     padding: 20px;
 }
 
+/* SKILLS */
+
+
+/* CONTACT */
