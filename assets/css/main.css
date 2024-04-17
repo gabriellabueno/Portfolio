@@ -1,15 +1,15 @@
 /* variables*/
 :root {
-    --dark-purple: #200F21;
-    --purple: #382039;
-    --pink: #B030B0;
-    --white: #FFF;
+    --color-first: #200F20;
+    --color-second: #382038;
+    --color-third: #FC6FFC;
+    --color-font: #edf4f5;
 }
 
 /* text */
 * {
     font-family: 'Montserrat', Helvetica, sans-serif;
-    color: var(--white);
+    color: var(--color-font);
 }
 
 h1 {
@@ -27,33 +27,43 @@ p {
 
 /* background */
 body {
-    background-color: var(--dark-purple);
+    background-color: var(--color-first);
 }
 
 .light-bg {
-    background-color: var(--purple);
+    background-color: var(--color-second);
 }
 
 .dark-bg {
-    background-color: var(--dark-purple);
+    background-color: var(--color-first);
 }
 
 /* navigation menu*/
 
-.menu-nav .nav-item {
+.menu-nav {
+    text-align: right;
+    background-color: red;
+}
+
+.menu-nav a {
     font-size: 20px;
     font-weight: 700;
-    margin-right: 70px;
-    &:hover {
-        color: var(--pink);
+    text-decoration: none;
+    background-color: blue;
+    &:hover:not(buttonCV) {
+        color: var(--color-third);
     }
 }
 
-menu-nav {
-    display: inline-flex;
-    padding: 21px 47px 19px 30px;
-    align-items: flex-end;
-    gap: 522px; 
+#buttonCV {
+    background-color: var(--color-third);
+    padding: 15px;
+    border-radius: 30px;
+    color: var(--color-first);
+    transition: .2s ease-in-out 0s;
+    &:hover {
+        transform: scale(1.05); 
+    }
 }
 
 /* header */
@@ -77,18 +87,18 @@ menu-nav {
 
 .quote-p3-container {
     width:fit-content;
-    border: 2px dashed var(--pink);
+    border: 2px dashed var(--color-third);
     padding: 10px;
     margin-left: 500px;
     margin-top: 50px ;
 }
 
 .quote-p3 {
-    color: var(--dark-purple);
+    color: var(--color-first);
     font-weight: 700;
     padding: 15px;
     &:hover {
-        color: var(--pink);
+        color: var(--color-third);
     }
 }
 
