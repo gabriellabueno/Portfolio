@@ -42,13 +42,24 @@ p {
 
 /* NAVIGATION MENU */
 
+.interface {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 35px;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+}
+
 .menu-nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
     gap: 100px;
-    margin: 10px 40px;
 }
 
 .menu-nav a {
@@ -107,7 +118,7 @@ p {
     }
 }
 
-img {
+.skills img, contact img {
     width: 15%;
     height: auto;
 }
