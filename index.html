@@ -7,11 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="shortcut icon" href="./favicon.png">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+   
+    <link rel="icon" href="./assets/black-logo.svg" 
+        media="(prefers-color-scheme: light)">
+    <link rel="icon" href="./assets/white-logo.svg"
+        media="(prefers-color-scheme: dark)">
    
     <title>Gabriella Bueno</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     
@@ -20,118 +25,171 @@
 
 <body>
     <main>
+
         <header>
-            <div class="interface">
-                <a href="#home" class="logo">
-                    <img src="./assets/images/logo-white.png" alt="Logo">
-                </a>
-                <nav class="menu-nav">   
+            <a href="#home">
+                <img class="header__logo" src="./assets/white-logo.svg" alt="Logo" >
+            </a>
+            <nav class="header-nav">  
+                <ul class="header-nav__list">
+                    <li>
                         <a href="#about">About</a>
+                    </li>
+                    <li>
                         <a href="#skills">Skills</a>
+                    </li>
+                    <li>
                         <a href="#projects">Projects</a>
+                    </li>
+                    <li>
                         <a href="#contact">Contact</a>
-                        <a id="buttonCV" href="">Download CV</a>
-                    </ul>
-                </nav>
-            </div>
+                    </li>
+                </ul>
+            </nav>
+            <a href="">
+                <button class="header-nav__button">Download CV</button>
+            </a>
         </header>
 
-        <section class="welcome">
-            <div class="header-container">
-                <p class="welcome-quote quote-p1">Welcome.</p>
-                <p class="welcome-quote quote-p2">I think I know just how to</p>
-                <div class="quote-p3-container">
-                    <span class="welcome-quote quote-p3">solve your problem!</span>                    
-                </div>
-            </div>
         
-        </section>
+        <div class="greetings">
+            <h1 class="greetings__quote">Hello World! <br> I am Gabriella Bueno</h1>
+            <img class=".greetings__image" src="assets/computer.gif" alt="Animation of a computer">
+        </div>
         
-        <section id="about" class="about-me light-bg">
-            <h1>Gabriella Bueno</h1>
-            <div class="about-content">
+
+        <section id="#about" class="about">
+            <h1>About</h1>
+            <br>
+            <div class="about__content">
                 <p>With a background in Psychology, I decided to pursue my passion for Technology and and pursued a degree in the Systems Analysis and Development program at FATEC Guarulhos. 
-                    I am known for my eloquence, spontaneity, and a great sense of humor.
-                    My strong organizational skills and methodical approach make it effortless for me to excel in my work.</p>
+                I am known for my eloquence, spontaneity, and a great sense of humor.
+                My strong organizational skills and methodical approach make it effortless for me to excel in my work.</p>
+                <br>
                 <p>I am constantly seeking ways to optimize my daily routine and projects, which is why I have dedicated myself to studying automation scripts. 
-                    I have hands-on experience in shell scripting for Windows systems and shell scripting for Linux/Unix systems</p>
+                I have hands-on experience in shell scripting for Windows systems and shell scripting for Linux/Unix systems</p>
+                <br>
                 <p>My degree in Systems Analysis and Development has provided me a strong knowledge base in Hardware and computer architecture.
-                    Additionally, I actively participate in Robotics projects at FATEC, where we utilize C++ programming for Arduino devices. 
-                    This practical experience allows me to gain a deeper understanding of the concepts that are abstracted by the Software.
-                </p>
+                Additionally, I actively participate in Robotics projects at FATEC, where we utilize C++ programming for Arduino devices. 
+                This practical experience allows me to gain a deeper understanding of the concepts that are abstracted by the Software.</p>
+                <br>
                 <p>Moreover, I have also ventured into notebook maintenance, providing technical support and performing formatting tasks.</p>
             </div>
         </section>
 
-        <section id="skills" class="skills dark-bg">
+
+        <section id="#skills" class="skills">
             <h1>Skills</h1>
-            <div class="skill-item">
-                <img class="html" src="./assets/images/skills/html-logo.png" alt="HTML Logo">
-                <p>HTML</p>
+            <br>
+
+            <div class="skills__container">
+                
+               
+                <div class="skills__category">
+                    <h2>Front-end</h2>
+                    
+                    <div class="skills__content">
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/html-logo.svg" alt="HTML Logo">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/css-logo.svg" alt="CSS Logo">
+                            <p>CSS</p> 
+                        </div>
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/javascript-logo.svg" alt="JavaScript Logo">
+                            <p>JAVASCRIPT</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="skills__category">
+                    <h2>Programming Languages</h2>
+
+                    <div class="skills__content">
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/c-logo.svg" alt="C Language Logo">
+                            <p>C LANGUAGE</p>
+                        </div>
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/java-logo.svg" alt="C++ Logo">
+                            <p>JAVA</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="skills__category">
+                    <h2>Other Technologies</h2>
+
+                    <div class="skills__content">
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/mysql-logo.svg" alt="MySQL Logo">
+                            <p>MySQL</p>
+                        </div>
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/git-logo.svg" alt="Git Logo">
+                            <p>GIT</p>
+                        </div>
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/linux-logo.svg" alt="Linux Logo">
+                            <p>LINUX</p>
+                        </div>
+                        <div class="skills__item">
+                            <img src="./assets/images/skills/arduino-logo.svg" alt="Arduino Logo">
+                            <p>ARDUINO</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skill-item">
-                <img class="css" src="./assets/images/skills/css-logo.png" alt="CSS Logo">
-                <p>CSS</p> 
-            </div>
-            <div class="skill-item">
-                <img class="javascript" src="./assets/images/skills/javascript-logo.png" alt="JavaScript Logo">
-                <p>JAVASCRIPT</p>
-            </div>
-            <div class="skill-item">
-                <img class="c-lang" src="./assets/images/skills/c-lang-logo.png" alt="C Language Logo">
-                <p>C</p>
-            </div>
-            <div class="skill-item">
-                <img class="c-plusplus" src="./assets/images/skills/cplusplus-logo.png" alt="C++ Logo">
-                <p>C++</p>
-            </div>
-            <div class="skill-item">
-                <img class="shell-script" src="./assets/images/skills/shell-script-logo.png" alt="Shell Script Logo">
-                <p>SHELL SCRIPT</p>
-            </div>
-            <div class="skill-item">
-                <img class="linux" src="./assets/images/skills/linux-logo.png" alt="Linux Logo">
-                <p>LINUX</p>
-            </div>
-            <div class="skill-item">
-                <img class="windows" src="./assets/images/skills/windows-logo.png" alt="Windows Logo">
-                <p>WINDOWS</p>
-            </div>
+
+           
         </section>
 
-        <section id="projects" class="projects light-bg">
+
+        <section id="#projects" class="projects">
             <h1>Projects</h1>
-            <div class="carousel-projects">
+            <div class="carousel__projects">
+            
             </div>
         </section>
 
-        <section id="contact" class="contact dark-bg">
+
+        <section id="#contact" class="contact">
             <h1>Contact</h1>
-            <div class="contac-item">
-                <a href="https://www.linkedin.com/in/gabriella-c-bueno/">
-                    <img class="linkedin" src="./assets/images/contact/linkedin.png" alt="Linkedin Profile">
+
+            <div class="contact__content">
+                <div class="contact__item">
+                    <a href="mailto:gabriellacbueno@outlook.com">
+                        <img src="./assets/images/contact/email-logo.svg" alt="Contact via Email">
+                    </a>
+                    <p>Email</p>
+                </div>
+                <div class="contact__item">
+                    <a href="https://www.linkedin.com/in/gabriella-c-bueno/" target="_blank">
+                        <img src="./assets/images/contact/linkedin-logo.svg" alt="Linkedin Profile">
+                    </a>
                     <p>Linkedin</p>
-                </a>
+                </div>
+                <div class="contact__item">
+                    <a href="https://github.com/gabriellabueno" target="_blank">
+                        <img src="./assets/images/contact/github-logo.svg" alt="GitHub Profile">
+                    </a>
+                    <p>GitHub</p>
+                </div>
+
             </div>
-            <div class="contac-item">
-                <a href="mailto:gabriellacbueno@outlook.com">
-                    <img class="email" src="./assets/images/contact/email.png" alt="Contact via Email">
-                    <p>E-mail</p>
-                </a>
-            </div>
-            <div class="contac-item">
-                <a href="https://wa.link/0zftlw">
-                    <img class="whatsapp" src="./assets/images/contact/whatsapp.png" alt="WhatsApp Message">
-                    <p>WhatsApp</p>
-                </a>
-            </div>
+           
         </section>
+
 
         <footer>
-            <div class="footer-quote">
-                <p>And what I don't know... Give me a few days</p>
-            </div>
+                <em>And what I don't know... Give me a few days</em>
         </footer>
+
+
     </main>
 </body>
 </html>
