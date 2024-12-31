@@ -6,13 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
    
-    <link rel="icon" href="./assets/black-logo.svg" 
+    <link rel="icon" href="./assets/images/black-logo.svg" 
         media="(prefers-color-scheme: light)">
-    <link rel="icon" href="./assets/white-logo.svg"
+    <link rel="icon" href="./assets/images/white-logo.svg"
         media="(prefers-color-scheme: dark)">
    
     <title>Gabriella Bueno</title>
@@ -24,42 +25,48 @@
 </head>
 
 <body>
-    <main>
+  
 
-        <header>
-            <a href="#home">
-                <img class="header__logo" src="./assets/white-logo.svg" alt="Logo" >
+    <header>
+        
+        
+        <nav class="header-nav">  
+            <a class="header__logo"href="#home">
+                <p class="header__logo">G</p>
+                
             </a>
-            <nav class="header-nav">  
-                <ul class="header-nav__list">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="header-nav__list">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
             <a href="">
                 <button class="header-nav__button">Download CV</button>
             </a>
-        </header>
-
+        </nav>
         
+
         <div class="greetings">
-            <h1 class="greetings__quote">Hello World! <br> I am Gabriella Bueno</h1>
+            <h1 class="greetings__quote">And what I don't know... <br>give me a few days</h1>
             <img class=".greetings__image" src="assets/computer.gif" alt="Animation of a computer">
         </div>
         
+    </header>
 
-        <section id="#about" class="about">
-            <h1>About</h1>
+    <main>
+       
+
+        <section id="about" class="about">
+            <h1>Gabriella Bueno</h1>
             <br>
             <div class="about__content">
                 <p>With a background in Psychology, I decided to pursue my passion for Technology and and pursued a degree in the Systems Analysis and Development program at FATEC Guarulhos. 
@@ -78,7 +85,7 @@
         </section>
 
 
-        <section id="#skills" class="skills">
+        <section id="skills" class="skills">
             <h1>Skills</h1>
             <br>
 
@@ -149,7 +156,7 @@
         </section>
 
 
-        <section id="#projects" class="projects">
+        <section id="projects" class="projects">
             <h1>Projects</h1>
             <div class="carousel__projects">
             
@@ -157,7 +164,7 @@
         </section>
 
 
-        <section id="#contact" class="contact">
+        <section id="contact" class="contact">
             <h1>Contact</h1>
 
             <div class="contact__content">
@@ -183,12 +190,6 @@
             </div>
            
         </section>
-
-
-        <footer>
-                <em>And what I don't know... Give me a few days</em>
-        </footer>
-
 
     </main>
 </body>
